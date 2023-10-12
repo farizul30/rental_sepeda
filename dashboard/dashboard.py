@@ -5,7 +5,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-all_df = pd.read_csv("main_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/farizul30/rental_sepeda/main/dashboard/main_data.csv")
 
 def create_daily_orders_df(df):
     daily_orders_df = df.resample(rule='M', on='dteday').agg({
